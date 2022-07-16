@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@keyframes cloud {
+  from {
+    right: -550px;
+  }
+  to {
+    right: 100%;
+  }
+}
+@keyframes pipe-animation {
+  from {
+    right: -50px;
+  }
+  to {
+    right: 100%;
+  }
+}
+@keyframes pipe-animation2 {
+  from {
+    right: -150px;
+  }
+  to {
+    right: 100%;
+  }
+}
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+  40% {
+    bottom: 170px;
+  }
+  50% {
+    bottom: 170px;
+  }
+  60% {
+    bottom: 170px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@keyframes Blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Press Start 2P", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.score {
+  position: absolute;
+  left: 1250px;
+  top: 60px;
+  z-index: 1;
+}
+
+.game-board {
+  background-image: linear-gradient(blue, white);
+  width: 100vw;
+  height: 100vh;
+}
+
+.cloud {
+  position: absolute;
+  width: 500px;
+  animation: cloud 30s infinite linear;
+}
+
+.grass {
+  height: 30px;
+  background: green;
+  margin: 81vh 0 0 0px;
+}
+
+.ground {
+  height: 389393px;
+  background: brown;
+  margin: 0 0 0 0px;
+}
+
+.player {
+  width: 150px;
+}
+
+.playerRange {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 65px;
+  height: 145px;
+  left: 70px;
+  bottom: 30px;
+}
+
+.jump {
+  animation: jump 1000ms ease-out;
+}
+
+.pipe {
+  position: absolute;
+  width: 50px;
+  height: 60px;
+  bottom: 70px;
+  animation: pipe-animation infinite linear;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.pipe2 {
+  position: absolute;
+  width: 50px;
+  height: 60px;
+  bottom: 70px;
+  animation: pipe-animation2 infinite linear;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+
+.SelectPlayer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  width: 100vw;
+  bottom: 200px;
+}
+
+ion-icon {
+  font-size: 40px;
+  color: white;
+  animation: Blink 0.5s infinite linear;
+  cursor: pointer;
+}
+
+.PositionStart {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100vw;
+  bottom: 150px;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.start {
+  margin: 20px;
+  cursor: pointer;
+  width: 150px;
+  border-radius: 20px;
+  border: none;
+  color: red;
+  border: 3px rgb(255, 72, 0) dotted;
+  background-color: wheat;
+  width: 75px;
+  height: 40px;
+}
+
+.title {
+  display: flex;
+  margin-top: 70px;
+  justify-content: center;
+}
+
+.SubTitle {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.GameOver {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100vw;
+  margin: auto auto auto auto;
+  margin-top: 160px;
+  font-size: 50px;
+  color: Red;
+  padding: 30px;
+}
+.GameOver h1 {
+  display: none;
+  box-shadow: 10px 5px 5px white;
+  animation: Blink 0.5s infinite linear;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100vw;
+  margin-top: 330px;
+}
+.buttons .lobby {
+  margin: 20px;
+  cursor: pointer;
+  width: 150px;
+  border-radius: 20px;
+  border: none;
+  color: red;
+  border: 3px rgb(255, 72, 0) dotted;
+  background-color: wheat;
+  display: none;
+}
+.buttons .playAgain {
+  margin: 20px;
+  cursor: pointer;
+  width: 150px;
+  border-radius: 20px;
+  border: none;
+  color: red;
+  border: 3px rgb(255, 72, 0) dotted;
+  background-color: wheat;
+  display: none;
+}
+
+/*# sourceMappingURL=App.css.map */

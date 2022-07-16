@@ -1,0 +1,160 @@
+@import "./animations.scss";
+@import  "./function.scss";
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Press Start 2P', cursive;
+}
+a{
+    text-decoration: none;
+}
+body{
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+.score{
+    position:absolute;
+    left:1250px;
+    top: 60px;
+    z-index:1;
+}
+.game-board{
+    
+    background-image:linear-gradient(blue , white);
+    width:100vw;
+    height: 100vh;
+   
+
+}
+.cloud{
+    position:absolute;
+    width:500px;
+    animation:cloud 30s infinite linear;
+    
+}
+.grass{
+    height:30px;
+    background:green;
+    margin:81vh 0 0 0px;
+}
+.ground{
+    height:389393px;
+    background:brown;
+    margin:0 0 0 0px;
+}
+
+.player{
+    width:150px;
+   
+   
+}
+.playerRange{
+    @include position;
+    width:65px;
+    height:145px;
+    left:70px ;
+    bottom:30px;
+   
+  
+}
+.jump{
+      animation:jump 1000ms ease-out;
+}
+.pipe{
+   
+    position:absolute;
+    width:50px;
+    height:60px;
+    bottom:70px;
+    animation:pipe-animation infinite linear ;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+
+
+}
+
+.pipe2{
+   
+    position:absolute;
+    width:50px;
+    height:60px;
+    bottom:70px;
+    animation:pipe-animation2 infinite linear ;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+ 
+}
+
+.SelectPlayer{
+    @include position;
+    align-items: center;
+    width:100vw;
+    bottom:200px;
+
+  
+}
+ion-icon {
+    font-size: 40px;
+    color: white;
+    animation:Blink 0.5s infinite linear ;
+    cursor: pointer;
+  }
+  .PositionStart{
+    @include position;
+    width: 100vw;
+    bottom: 150px;
+    justify-content: center;
+    text-decoration:none;
+  }
+.start{
+    
+    @include button;
+    width: 75px;
+    height: 40px;
+    
+}
+.title{
+ 
+    display: flex;
+    margin-top:70px;
+    justify-content: center;
+}
+.SubTitle{
+ 
+    display: flex;
+    margin-top:30px;
+    justify-content: center;
+}
+.GameOver{
+    
+    @include position;
+    width: 100vw;
+    margin: auto auto auto auto;    
+    margin-top: 160px;
+    font-size: 50px;
+    color: Red;
+    padding: 30px;
+  
+     h1{
+        display: none;
+        box-shadow: 10px 5px 5px white;
+        animation:Blink 0.5s infinite linear ;
+
+    }
+
+}
+.buttons{
+   
+    @include position;
+    width: 100vw;
+    margin-top: 330px;
+    .lobby{ 
+        @include button;
+        display: none;
+       
+    }
+   .playAgain{
+    @include button;
+    display: none;
+   }    
+}
