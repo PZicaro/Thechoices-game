@@ -151,12 +151,21 @@ ion-icon {
   cursor: pointer;
 }
 
+.PositionName {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100vw;
+  bottom: 200px;
+  justify-content: center;
+}
+
 .PositionStart {
   display: flex;
   justify-content: center;
   position: absolute;
   width: 100vw;
-  bottom: 150px;
+  bottom: 130px;
   justify-content: center;
   text-decoration: none;
 }
